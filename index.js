@@ -3,6 +3,7 @@
 var program = require('commander');
 var doIt = require('./do-it');
 var lme = require('lme');
+var moment = require('moment');
 
 program
 	.version('1.0.0')
@@ -11,7 +12,8 @@ program
 	.parse(process.argv); // end with parse to parse through the input
 
 if (program.wake) {
-	var timeLeft = new Date(program.wake) - new Date();
+	var timeLeft = moment(program.wake) - moment();
+
 	setTimeout(function() {
 		doIt();
 	}, timeLeft);
