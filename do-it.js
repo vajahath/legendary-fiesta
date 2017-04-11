@@ -17,5 +17,7 @@ if (!conf) {
 }
 
 module.exports = function() {
-	console.log('hell ya')
+	// magic happens here..
+	robot.moveMouse(conf.login_loc.x, conf.login_loc.y);
+	robot.mouseClick();
 }
