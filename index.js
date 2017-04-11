@@ -18,6 +18,3 @@ if (program.wake) {
 		doIt();
 	}, timeLeft);
 }
-
-//Move the mouse to 100, 100 on the screen.
-// robot.moveMouseSmooth(100, 100);
