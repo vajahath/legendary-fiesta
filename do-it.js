@@ -20,4 +20,6 @@ module.exports = function() {
 	// magic happens here..
 	robot.moveMouse(conf.login_loc.x, conf.login_loc.y);
 	robot.mouseClick();
+	robot.typeString(conf.password);
+	robot.keyTap('enter');
 }
