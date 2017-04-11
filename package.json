@@ -1,16 +1,16 @@
 {
-	"name": "myworktimecompanion",
+	"name": "legendary-fiesta",
 	"version": "1.0.0",
-	"description": "helpsmeinmyworktimes.ifyouunderstandthispackage,shhh...searchengineiswatching..yougettheidea",
+	"description": "it does it automatically",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"bin": {
-		"myworktimecompanion": "./index.js"
+		"legendary-fiesta": "./index.js"
 	},
-	"author": "",
-	"license": "ISC",
+	"author": "Vajahath Ahmed <vajuoff.1@gmail.com> (http://twitter.com/vajahath7)",
+	"license": "MIT",
 	"dependencies": {
 		"commander": "^2.9.0",
 		"is-good-json": "^1.0.3",
