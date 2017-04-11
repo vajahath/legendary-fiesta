@@ -13,6 +13,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"commander": "^2.9.0",
+		"is-good-json": "^1.0.3",
 		"lme": "^1.5.1",
 		"moment": "^2.18.1",
 		"robotjs": "^0.4.7"
