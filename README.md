@@ -2,13 +2,12 @@
 
 *will provide readme later with next release*
 
+> This package is not intended for any kind of misuse.
+
 ### Why this name?
 github suggested it - so blindly took it.
 
-<small>
-> This package is not intended for any kind of misuse.
-[why?](https://drive.google.com/file/d/0B4TkIrDCa6ieMXhlWlZwVTNRY3M/view)
-</small>
 
+[why?](https://drive.google.com/file/d/0B4TkIrDCa6ieMXhlWlZwVTNRY3M/view)
 ## Licence
-MIT &cpoy; [Vajahath Ahmed](https://twitter.com/vajahath7)
+MIT © [Vajahath Ahmed](https://twitter.com/vajahath7)
