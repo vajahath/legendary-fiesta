@@ -6,7 +6,7 @@ var lme = require('lme');
 var moment = require('moment');
 
 program
-	.version('1.0.0')
+	.version('1.0.1')
 	.option('-W, --wake <time>', 'wakeup time')
 	.command('config', 'configure this package')
 	.command('position', 'get position of mouse after 5 seconds')

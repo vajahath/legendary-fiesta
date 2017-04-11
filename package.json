@@ -1,6 +1,6 @@
 {
 	"name": "legendary-fiesta",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "it does it automatically",
 	"main": "index.js",
 	"scripts": {
