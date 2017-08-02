@@ -2,7 +2,8 @@
   "name": "legendary-fiesta",
   "version": "0.0.1",
   "description": "Personal package. This may not be helpful for you..",
-  "main": "dist/index.js",
+  "main": "dist/bin/legendary-fiesta.js",
+  "bin": "dist/bin/legendary-fiesta.js",
   "scripts": {
     "prepublishOnly": "echo 'Executing pre-publish stuffs..' && npm run lint && npm run build",
     "build": "./node_modules/.bin/tsc",
@@ -23,11 +24,24 @@
     "url": "https://github.com/vajahath/legendary-fiesta/issues"
   },
   "homepage": "https://github.com/vajahath/legendary-fiesta#readme",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "commander": "^2.11.0",
+    "editor": "^1.0.0",
+    "jsonfile": "^3.0.1",
+    "lme": "^1.5.3",
+    "moment": "^2.18.1",
+    "robotjs": "^0.4.7",
+    "user-home": "^2.0.0"
+  },
   "devDependencies": {
     "@types/chai": "^4.0.1",
+    "@types/chalk": "^0.4.31",
+    "@types/commander": "^2.9.1",
     "@types/mocha": "^2.2.41",
+    "@types/moment": "^2.13.0",
     "@types/node": "^8.0.5",
+    "@types/user-home": "^2.0.0",
     "chai": "^4.1.0",
     "concurrently": "^3.5.0",
     "cross-env": "^5.0.1",
@@ -38,5 +52,8 @@
     "tslint": "^5.5.0",
     "typescript": "^2.4.2"
   },
-  "pre-commit": ["preCommit-msg", "lint-noFix"]
+  "pre-commit": [
+    "preCommit-msg",
+    "lint-noFix"
+  ]
 }
