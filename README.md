@@ -16,7 +16,7 @@ run
 legendary-fiesta --help
 ```
 
-[![used version of ts-np generator](https://img.shields.io/badge/ts--np-v0.0.23-a5a5a5.svg?style=flat-square)](https://github.com/vajahath/generator-ts-np)
+[![used version](https://img.shields.io/badge/ts--np-v0.0.23-a5a5a5.svg?style=flat-square)](https://github.com/vajahath/generator-ts-np)
 
 ## Licence
 MIT &copy; [Vajahath Ahmed](https://twitter.com/vajahath7)
