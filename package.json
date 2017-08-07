@@ -1,6 +1,6 @@
 {
 	"name": "legendary-fiesta",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Personal package. This may not be helpful for you..",
 	"main": "dist/bin/legendary-fiesta.js",
 	"bin": "dist/bin/legendary-fiesta.js",
