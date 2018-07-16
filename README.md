@@ -1,4 +1,5 @@
 # legendary-fiesta
+
 Personal package. This may not be useful for you..
 
 [![npm](https://img.shields.io/npm/v/legendary-fiesta.svg)]()
@@ -6,12 +7,19 @@ Personal package. This may not be useful for you..
 [![Built with generator-ts-np](https://img.shields.io/badge/scaffolding-ts_np-2699ad.svg)](https://github.com/vajahath/generator-ts-np)
 
 ## Install
+
 ```
 npm i --save legendary-fiesta
 ```
 
+## Why?
+
+It assist me in many things ;)
+
 ## Usage
+
 run
+
 ```
 legendary-fiesta --help
 ```
@@ -19,4 +27,5 @@ legendary-fiesta --help
 [![used version](https://img.shields.io/badge/ts--np-v0.0.23-a5a5a5.svg?style=flat-square)](https://github.com/vajahath/generator-ts-np)
 
 ## Licence
+
 MIT &copy; [Vajahath Ahmed](https://twitter.com/vajahath7)
