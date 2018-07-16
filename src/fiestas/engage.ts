@@ -1,9 +1,10 @@
 import * as robot from 'robotjs';
 
 export default () => {
-	console.log('Engaged ...');
+  console.log('Engaged ...');
 
-	setInterval(() => {
-		robot.keyTap('escape');
-	}, 5000);
+  setInterval(() => {
+    const { x, y } = robot.getMousePos();
+    robot.moveMouse(x + 1, y);
+  }, 5000);
 };

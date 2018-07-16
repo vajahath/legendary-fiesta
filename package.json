@@ -1,56 +1,58 @@
 {
-	"name": "legendary-fiesta",
-	"version": "2.0.0",
-	"description": "Personal package. This may not be helpful for you..",
-	"main": "dist/bin/legendary-fiesta.js",
-	"bin": "dist/bin/legendary-fiesta.js",
-	"scripts": {
-		"prepublishOnly": "echo 'Executing pre-publish stuffs..' && npm run lint && npm run build",
-		"build": "./node_modules/.bin/tsc",
-		"build-watch": "./node_modules/.bin/tsc -w",
-		"lint": "./node_modules/.bin/prettier --use-tabs --tab-width 4 --write src/**/* && ./node_modules/.bin/tslint -c ./tslint.json -p ./tsconfig.json -t stylish --fix ./src/**/*",
-		"lint-noFix": "./node_modules/.bin/prettier --use-tabs --tab-width 4 src/**/* && ./node_modules/.bin/tslint -c ./tslint.json -p ./tsconfig.json -t stylish ./src/**/*",
-		"test": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/mocha tests/ --compilers ts:ts-node/register,tsx:ts-node/register --recursive --reporter spec",
-		"test-watch": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/mocha tests/ --compilers ts:ts-node/register,tsx:ts-node/register --recursive --reporter spec --watch",
-		"preCommit-msg": "echo 'Precommit checks ...' && exit 0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/vajahath/legendary-fiesta.git"
-	},
-	"author": "Name <vajuoff.1@gmail.com> (https://twitter.com/vajahath7)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/vajahath/legendary-fiesta/issues"
-	},
-	"homepage": "https://github.com/vajahath/legendary-fiesta#readme",
-	"dependencies": {
-		"chalk": "^2.0.1",
-		"commander": "^2.11.0",
-		"editor": "^1.0.0",
-		"jsonfile": "^3.0.1",
-		"lme": "^1.5.3",
-		"moment": "^2.18.1",
-		"robotjs": "^0.4.7",
-		"user-home": "^2.0.0"
-	},
-	"devDependencies": {
-		"@types/chai": "^4.0.1",
-		"@types/chalk": "^0.4.31",
-		"@types/commander": "^2.9.1",
-		"@types/mocha": "^2.2.41",
-		"@types/moment": "^2.13.0",
-		"@types/node": "^8.0.5",
-		"@types/user-home": "^2.0.0",
-		"chai": "^4.1.0",
-		"concurrently": "^3.5.0",
-		"cross-env": "^5.0.1",
-		"mocha": "^3.4.2",
-		"pre-commit": "^1.2.2",
-		"prettier": "^1.5.3",
-		"ts-node": "^3.3.0",
-		"tslint": "^5.5.0",
-		"typescript": "^2.4.2"
-	},
-	"pre-commit": ["preCommit-msg", "lint-noFix"]
+  "name": "legendary-fiesta",
+  "version": "2.0.0",
+  "description": "Personal package. This may not be helpful for you..",
+  "main": "dist/bin/legendary-fiesta.js",
+  "bin": "dist/bin/legendary-fiesta.js",
+  "scripts": {
+    "prepublishOnly": "echo 'Executing pre-publish stuffs..' && npm run lint && npm run build",
+    "build": "tsc",
+    "build-watch": "tsc -w",
+    "lint": "prettier --write src/**/* && tslint -c ./tslint.json -p ./tsconfig.json -t stylish --fix ./src/**/*",
+    "lint-noFix": "prettier --use-tabs --tab-width 4 src/**/* && tslint -c ./tslint.json -p ./tsconfig.json -t stylish ./src/**/*",
+    "test": "cross-env NODE_ENV=test mocha tests/ --compilers ts:ts-node/register,tsx:ts-node/register --recursive --reporter spec",
+    "test-watch": "cross-env NODE_ENV=test mocha tests/ --compilers ts:ts-node/register,tsx:ts-node/register --recursive --reporter spec --watch",
+    "preCommit-msg": "echo 'Precommit checks ...' && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vajahath/legendary-fiesta.git"
+  },
+  "author": "Vajahath Ahmed <vajuoff.1@gmail.com> (https://twitter.com/vajahath7)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vajahath/legendary-fiesta/issues"
+  },
+  "homepage": "https://github.com/vajahath/legendary-fiesta#readme",
+  "dependencies": {
+    "@studio/editor": "^1.1.1",
+    "chalk": "^2.4.1",
+    "commander": "^2.11.0",
+    "jsonfile": "^3.0.1",
+    "lme": "^1.5.3",
+    "moment": "^2.18.1",
+    "robotjs": "^0.5.1",
+    "user-home": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/commander": "^2.9.1",
+    "@types/mocha": "^2.2.41",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^8.0.5",
+    "@types/user-home": "^2.0.0",
+    "chai": "^4.1.0",
+    "concurrently": "^3.5.0",
+    "cross-env": "^5.0.1",
+    "mocha": "^3.4.2",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.5.3",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.2"
+  },
+  "pre-commit": [
+    "preCommit-msg",
+    "lint-noFix"
+  ]
 }

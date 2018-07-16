@@ -7,11 +7,11 @@ const configFile = join(home, internals.configFileName);
 let conf: any;
 
 try {
-	conf = require(configFile);
+  conf = require(configFile); // tslint:disable-line
 } catch (err) {
-	console.log('The config file got issues.');
-	console.log(err);
-	process.exit(1);
+  console.log('The config file got issues.');
+  console.log(err);
+  process.exit(1);
 }
 
 export = conf;

@@ -1,3 +1,3 @@
 export default {
-	configFileName: '.legendary-fiesta.config.json',
+  configFileName: '.legendary-fiesta.config.json',
 };
